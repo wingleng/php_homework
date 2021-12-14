@@ -1,0 +1,91 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color:;
+    width: 100%;   
+    height: 100%; 
+}
+#main{
+    width: 1300px;
+    height: auto;
+    background-color:;
+    
+}
+#shoptable{
+    border: 1px solid #3762bc;
+    width: 100%;
+    width: auto;
+    text-align: center;
+    font-size: 30px;
+    font-family: "黑体";
+}
+#shoptable tr td{
+    border: 1px solid #3762bc;
+}
+#img img{
+    
+    top: 20px;
+    left: 20px;
+    width: 200px;
+    height: 200px;
+}
+#shoptable tr #name{
+    font-family: "宋体";
+    font-size: 25px;
+}
+#price{
+    color: red;
+}
+#nums{}
+#totalprice{
+    color: red;
+}
+#operate{}
+#table_head{
+    text-align: center;
+    vertical-align: middle;
+    background-color: #4a77d4;
+    color: #fff;
+    border: 2px solid #3762bc;
+}
+
+#operate:hover{
+    background-color: #4a77d4;
+    color: #fff;
+    
+}
+
+#footer{
+    width: 1300px;
+    height: 200px;
+    background-color:;
+    color: #fff;
+    
+    display: flex;
+      align-items: center;
+      justify-content: center;
+    text-align: center;
+}
+#footer input{
+    width: 150px;   
+    height: 70px; 
+    vertical-align: middle;
+    display: inline-block;   
+    background-color: #4a77d4;   
+    border: 3px solid #3762bc;   
+    color: #fff;   
+    
+    font-size: 30px;   
+    line-height: 70px;   
+       border-radius: 10px;   
+       margin: 0;
+    margin-left: 100px;
+    font-family: "黑体";
+    user-select: none;
+}
+#footer p{
+    font-family: "黑体";
+    color: red;
+    font-size: 30px;
+    text-shadow:3px 3px 3px;  
+}

@@ -24,7 +24,7 @@ if (isset($_REQUEST['prikey'])) {
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="jquery.js"></script>
+	<script src="jquery-3.6.0.js"></script>
 	<link type="text/css" rel="styleSheet" href="purchase.css" />
 	<title>Document</title>
 	<script>
@@ -62,12 +62,16 @@ if (isset($_REQUEST['prikey'])) {
 			var buynum = document.getElementById("bnum").value;
 			$.ajax({
 				url: "shopcarControer.php",
-				data: "id=" + shopkey + "&nums=" + buynum + "&method=add", //'name='+name+'&user='+user,
+				data: {
+					"id": shopkey,
+					"nums": buynum,
+					"method":"add"
+				},
 				async: false,
 				type: "POST",
 				dataType: "text",
-				success: function(httpdata) {
-					if (httpdata.trim() == "added")
+				success: function(res) {
+					if (res == "added")
 						alert("已添加到购物车中！");
 				}
 			});
