@@ -1,0 +1,224 @@
+body{margin: 0px;
+    padding: 0px;
+    background-color:;
+    width: auto;   
+    height: auto; }
+#containter{
+    background-color: ;
+    width: 1300px;
+    height: 1000px;
+    margin: 0px;
+    padding: 60px;
+    border-width: 0px;
+    
+}
+#imgctn{
+    float: left;
+    width: 800px;
+    height: 800px;
+    background-color:;
+    margin-right: 40px;
+}
+#descrctn{
+    float: left;
+    width: 400px;
+    height: 800px;
+    padding: 5px 10px;
+    background-color: ;
+}
+#imgctn img{
+    width: 100%;
+    height:100%;
+}
+#tit{
+    display: block;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "黑体";
+    font-size: 20px;
+    word-wrap:break-word;
+    word-break:break-all;
+    overflow: hidden;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    border-bottom: 1px dotted black;
+}
+#pri{
+    
+    display: block;
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    vertical-align: middle;
+    font-family: "黑体";
+    font-size: 40px;
+    color: red;
+    word-wrap:break-word;
+    word-break:break-all;
+    overflow: hidden;
+    margin-top: 0px;
+    border-bottom: 1px dotted black;
+}
+#pri font{
+    font-size: 20px;
+    color: black;
+    font-family: "黑体";
+}
+#descri{
+    margin-top: 0px;
+    display: block;
+    
+    top: 120px;
+    width: 100%;
+    height: 30px;
+    text-align: left;
+    font-family: "黑体";
+    font-size: 20px;
+    word-wrap:break-word;
+    word-break:break-all;
+    overflow: hidden;
+    opacity: 0.8;
+    border-bottom: 1px dotted black;
+}
+#pnum{
+    margin: 0px;
+    display: block;
+    
+    top: 120px;
+    width: 100%;
+    height: 30px;
+    text-align: left;
+    font-family: "黑体";
+    font-size: 20px;
+    word-wrap:break-word;
+    word-break:break-all;
+    overflow: hidden;
+    
+    border-bottom: 1px dotted black;
+}
+#purNum{
+    background-color: ;
+    display: flex;
+      align-items: center;
+      justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    border-bottom: 1px dotted black;
+    margin-bottom: 15px;
+    border-bottom: 1px dotted black;
+}
+#purNum input{
+    height: 54px;
+    width: 30%;
+     
+      
+    
+    display: inline-block;
+    font-size: 30px;   
+    color: #fff;   
+    text-shadow:1px 1px 1px;   
+    border-top: 3px solid #3762bc;   
+    border-left: 3px solid #3762bc;   
+    border-right: 3px solid #3762bc;   
+    border-bottom: 3px solid #3762bc;   
+    border-radius: 4px;   
+    background-color: #4a77d4;   
+    text-align: center;
+}
+#lastp{
+    width: 60px;   
+    height: 54px; 
+    vertical-align: middle;
+    display: inline-block;   
+    background-color: #4a77d4;   
+    border: 3px solid #3762bc;   
+    color: #fff;   
+    
+    font-size: 30px;   
+    line-height: 54px;   
+       border-radius: 5px;   
+       margin: 0;
+    font-family: "黑体";
+    user-select: none;
+}#nextp{
+    width: 60px;   
+    height: 54px; 
+    vertical-align: middle;
+    display: inline-block;   
+    background-color: #4a77d4;   
+    border: 3px solid #3762bc;   
+    color: #fff;   
+    
+    font-size: 30px;   
+    line-height: 54px;   
+       border-radius: 5px;   
+       margin: 0;
+    font-family: "黑体";
+    user-select: none;
+}
+#buynow{
+width: 100%;   
+height: 100px;   
+display: block;   
+background-color: #4a77d4;   
+border: 1px solid #3762bc;   
+color: #fff;   
+font-family: "黑体";
+font-size: 40px;
+
+line-height: normal;   
+border-radius: 15px;   
+margin-top: 10px;
+margin-bottom: 10px;
+
+
+}
+#addtocar{
+width: 100%;   
+height: 100px;   
+display: block;   
+background-color: #4a77d4;   
+border: 1px solid #3762bc;   
+color: #fff;   
+font-family: "黑体";
+font-size: 40px;
+
+line-height: normal;   
+border-radius: 15px;   
+margin-top: 10px;
+margin-bottom: 10px;
+    
+}
+#gotocar{
+    width: 100%;   
+height: 100px;   
+display: block;   
+background-color: #4a77d4;   
+border: 1px solid #3762bc;   
+color: #fff;   
+font-family: "黑体";
+font-size: 40px;
+
+line-height: normal;   
+border-radius: 15px;   
+margin-top: 100px;
+margin-bottom: 10px;
+    
+    
+}
+#lastp:hover{
+    background-color: #3762BC;
+}
+#nextp:hover{
+    background-color: #3762BC;
+}
+#buynow:hover{
+    background-color: #3762BC;
+}
+#addtocar:hover{
+    background-color: #3762BC;
+}

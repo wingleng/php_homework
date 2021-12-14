@@ -223,19 +223,19 @@
             var chil = shop.lastChild;
             var prikey = chil.value;
             alert("prikey=" + prikey);
-            location.href = "purchase.jsp?prikey=" + prikey;//将商品的主键传递过去，方便其他界面进行查找
+            location.href = "purchase.php?prikey=" + prikey;//将商品的主键传递过去，方便其他界面进行查找
         }
 
         /**@access
          * 网页入口
          */
         $(document).ready(function() {
-            getAllProducts();
-            pageProduce(1);
-
+            getAllProducts();//发送数据请求
+            pageProduce(1);//默认在第一页
         });
     </script>
 </head>
+
 
 <body>
     <input type="button" value="点击清空当前页面" id="btn" onClick="cleardiv()" style="position: fixed">
