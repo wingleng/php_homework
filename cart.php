@@ -106,7 +106,10 @@
                 //发送ajax到后台处理jsp，将购物车中对应的商品删除。。。
                 $.ajax({
                     url: "shopcarControer.jsp",
-                    data: "method=delete&pkey=" + pkey,
+                    data:{
+                        "method":"delete",
+                        "pkey":pkey
+                    },
                     async: false,
                     type: "POST",
                     dataType: "text",
@@ -129,7 +132,7 @@
          * 并且刷新界面的。
          */
         function calsum() {
-            ajaxsender();
+            getshopdata();
             cartprice = 0; //使用之前要进行归位
             for (var j = 0; j < json.length; j++) {
                 cartprice = cartprice + json[j].totalprice;
@@ -144,7 +147,7 @@
          * 跳转到订单界面
          */
         function orders() {
-            window.location.href = "orders.jsp?cartprice=" + cartprice;
+            window.location.href = "orders.php?cartprice=" + cartprice;
         }
 
 

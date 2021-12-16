@@ -30,6 +30,7 @@
                         "method":"check"
                     },
                     success: function(data){
+                        console.log(data);
                         switch(data){
                             case "pass":
                                 window.location="Main.php";

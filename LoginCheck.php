@@ -21,7 +21,7 @@ function check($conn)
     $prestat = $conn->prepare("SELECT * FROM user WHERE username=? AND password=?");
     $prestat->execute(array($username, $password));
     $prestat->setFetchMode(PDO::FETCH_ASSOC);
-    $row = $prestat->fetchAll();
+    $row = $prestat->fetch();
 
 
     //查不到肯定是参数错误啦~
@@ -32,6 +32,7 @@ function check($conn)
 
     //正常情况下就返回一个pass，然后将用户名和密码保存到session中，并且为其分配一个购物车
     echo "pass";
+    $_SEESION['id'] = $row['id'];
     $_SESSION['username'] = $username;
     $_SESSION['password'] = $password;
 

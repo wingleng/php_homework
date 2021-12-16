@@ -9,6 +9,9 @@ switch ($_POST['method']){
     case "getshopdata":
         echo (getshopdata($conn));
         break;
+    case "delete":
+        deleteItem();
+        break;
 }
 
 
@@ -62,6 +65,15 @@ function getshopdata($conn){
 
   //对数据处理完毕之后，就可以将其返回到页面当中。
   return json_encode($allProduct,JSON_UNESCAPED_UNICODE);
+}
 
+
+
+/**@function
+ * 将session中的商品项删除
+ */
+function deleteItem(){
+  $sid =  (string)$_POST['pkey'];
+  unset($_SESSION["shopcar"][$sid]);
 }
 ?>
